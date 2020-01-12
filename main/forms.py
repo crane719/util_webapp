@@ -20,4 +20,4 @@ class MultipleUploadForm(forms.Form):
             file_paths.append(file_path)
         export_dir = self.cleaned_data["export_dir"]
         hoge.video2mp3(file_paths, export_dir)
-        #hoge.recreate_dir("./media")
+        hoge.recreate_dir(["./media"])

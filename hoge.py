@@ -29,11 +29,8 @@ def make_dir(required_dirs):
         print("\n")
 
 def recreate_dir(directory):
-    if type(directory) != list:
-        directory = list(directory)
     for dir in directory:
         shutil.rmtree(dir)
-    print(directory)
     make_dir(directory)
 
 def is_dir_existed(directory):
