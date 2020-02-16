@@ -1,0 +1,9 @@
+._*.*
+/__pycache__/*
+.DS_Store
+/param/*
+/mnist/*
+/result/*
+/venv/*
+log
+db.sqlite3
