@@ -8,8 +8,8 @@ import moviepy.editor as mp
 import shutil
 
 # videoがmp4である前提
-def video2mp3(video_dirs, output_dir):
-    for video_dir in video_dirs:
+def video2mp3(names, video_dirs, output_dir):
+    for name, video_dir in zip(names, video_dirs):
         name = video_dir.split("/")[-1]
         name = name.replace(".mp4", "")
         clip_input = mp.VideoFileClip(video_dir).subclip()
